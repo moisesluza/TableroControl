@@ -1,17 +1,8 @@
-USE tablero
-GO
+
 
 IF OBJECT_ID (N'[S_View_TicketsConSLA_Anios]', N'P') IS NOT NULL
 	DROP PROCEDURE [S_View_TicketsConSLA_Anios]
 
-IF OBJECT_ID (N'[S_View_TicketsConSLA_Meses]', N'P') IS NOT NULL
-	DROP PROCEDURE [S_View_TicketsConSLA_Meses]
-
-IF OBJECT_ID (N'[S_View_TicketsPorEstados_Anios]', N'P') IS NOT NULL
-	DROP PROCEDURE [S_View_TicketsPorEstados_Anios]
-
-IF OBJECT_ID (N'[S_View_TicketsPorEstados_Meses]', N'P') IS NOT NULL
-	DROP PROCEDURE [S_View_TicketsPorEstados_Meses]
 GO
 CREATE PROCEDURE [S_View_TicketsConSLA_Anios]
 AS
@@ -23,7 +14,11 @@ BEGIN
 		ORDER BY 1 ASC
 	SET NOCOUNT OFF
 END
+
+IF OBJECT_ID (N'[S_View_TicketsConSLA_Meses]', N'P') IS NOT NULL
+	DROP PROCEDURE [S_View_TicketsConSLA_Meses]
 GO
+
 CREATE PROCEDURE [S_View_TicketsConSLA_Meses]
 	@ANIO VARCHAR(4)
 AS
@@ -37,7 +32,11 @@ BEGIN
 		ORDER BY 1 ASC
 	SET NOCOUNT OFF
 END
+
+IF OBJECT_ID (N'[S_View_TicketsPorEstados_Anios]', N'P') IS NOT NULL
+	DROP PROCEDURE [S_View_TicketsPorEstados_Anios]
 GO
+
 CREATE PROCEDURE [S_View_TicketsPorEstados_Anios]
 AS
 BEGIN
@@ -48,7 +47,11 @@ BEGIN
 		ORDER BY 1 ASC
 	SET NOCOUNT OFF
 END
+
+IF OBJECT_ID (N'[S_View_TicketsPorEstados_Meses]', N'P') IS NOT NULL
+	DROP PROCEDURE [S_View_TicketsPorEstados_Meses]
 GO
+
 CREATE PROCEDURE [S_View_TicketsPorEstados_Meses]
 	@ANIO VARCHAR(4)
 AS
@@ -72,9 +75,6 @@ GO
 
 IF OBJECT_ID (N'[S_View_TicketsEstadosAñosMesAgrupado_Anios]', N'P') IS NOT NULL
 	DROP PROCEDURE [S_View_TicketsEstadosAñosMesAgrupado_Anios]
-
-IF OBJECT_ID (N'[S_View_TicketsEstadosAñosMesAgrupado_Meses]', N'P') IS NOT NULL
-	DROP PROCEDURE [S_View_TicketsEstadosAñosMesAgrupado_Meses]
 GO
 
 CREATE PROCEDURE [S_View_TicketsEstadosAñosMesAgrupado_Anios]
@@ -86,6 +86,9 @@ BEGIN
 		ORDER BY 1 ASC
 	SET NOCOUNT OFF
 END
+
+IF OBJECT_ID (N'[S_View_TicketsEstadosAñosMesAgrupado_Meses]', N'P') IS NOT NULL
+	DROP PROCEDURE [S_View_TicketsEstadosAñosMesAgrupado_Meses]
 GO
 
 CREATE PROCEDURE [S_View_TicketsEstadosAñosMesAgrupado_Meses]
@@ -111,9 +114,6 @@ GO
 
 IF OBJECT_ID (N'[S_View_SatisfaccionEncuestas_Anios]', N'P') IS NOT NULL
 	DROP PROCEDURE [S_View_SatisfaccionEncuestas_Anios]
-
-IF OBJECT_ID (N'[S_View_SatisfaccionEncuestas_Meses]', N'P') IS NOT NULL
-	DROP PROCEDURE [S_View_SatisfaccionEncuestas_Meses]
 GO
 
 CREATE PROCEDURE [S_View_SatisfaccionEncuestas_Anios]
@@ -126,6 +126,9 @@ BEGIN
 		ORDER BY 1 ASC
 	SET NOCOUNT OFF
 END
+
+IF OBJECT_ID (N'[S_View_SatisfaccionEncuestas_Meses]', N'P') IS NOT NULL
+	DROP PROCEDURE [S_View_SatisfaccionEncuestas_Meses]
 GO
 
 CREATE PROCEDURE [S_View_SatisfaccionEncuestas_Meses]

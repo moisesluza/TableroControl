@@ -1,5 +1,4 @@
-USE tablero
-GO
+
 IF OBJECT_ID (N'[S_View_TicketsPorEstados_Eficacia]', N'P') IS NOT NULL
 	DROP PROCEDURE [S_View_TicketsPorEstados_Eficacia]
 

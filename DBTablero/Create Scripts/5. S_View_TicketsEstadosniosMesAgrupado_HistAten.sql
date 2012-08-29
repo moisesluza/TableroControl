@@ -1,5 +1,4 @@
-USE tablero
-GO
+
 
 set ANSI_NULLS ON
 set QUOTED_IDENTIFIER ON

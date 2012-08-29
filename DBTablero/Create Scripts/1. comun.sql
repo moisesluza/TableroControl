@@ -1,5 +1,4 @@
-USE tablero
-GO
+
 
 /****** Object:  StoredProcedure [dbo].[S_View_SatisfaccionEncuestas_Areas]    Script Date: 06/01/2011 00:41:22 ******/
 SET ANSI_NULLS ON
