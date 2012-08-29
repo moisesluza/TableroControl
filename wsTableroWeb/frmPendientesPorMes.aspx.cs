@@ -69,7 +69,7 @@ public partial class frmPendientesPorMes : System.Web.UI.Page
             this.rpvData.ProcessingMode = Microsoft.Reporting.WebForms.ProcessingMode.Remote;
             this.rpvData.ShowParameterPrompts = false;
             this.rpvData.ServerReport.ReportServerUrl = new Uri(ConfigurationManager.AppSettings["ReportServerUrl"]);
-            this.rpvData.ServerReport.ReportPath = "/rptTablero/rptPendientesPorMes";
+            this.rpvData.ServerReport.ReportPath = "/rptTableroBBVA/rptPendientesPorMes";
             this.rpvData.ServerReport.SetParameters(_parameters);
             this.rpvData.ServerReport.Refresh();
             this.rpvData.Visible = true;

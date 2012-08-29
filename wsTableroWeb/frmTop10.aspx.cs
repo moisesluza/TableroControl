@@ -123,13 +123,13 @@ public partial class frmTop10 : System.Web.UI.Page
             switch (ettTipo)
             {
                 case TipoTop10.Usuario:
-                    this.rpvData.ServerReport.ReportPath = "/rptTablero/rptTop10Usuario";
+                    this.rpvData.ServerReport.ReportPath = "/rptTableroBBVA/rptTop10Usuario";
                     break;
                 case TipoTop10.Area:
-                    this.rpvData.ServerReport.ReportPath = "/rptTablero/rptTop10Area";
+                    this.rpvData.ServerReport.ReportPath = "/rptTableroBBVA/rptTop10Area";
                     break;
                 case TipoTop10.Catgegoria:
-                    this.rpvData.ServerReport.ReportPath = "/rptTablero/rptTop10Categoria";
+                    this.rpvData.ServerReport.ReportPath = "/rptTableroBBVA/rptTop10Categoria";
                     break;
             }
 

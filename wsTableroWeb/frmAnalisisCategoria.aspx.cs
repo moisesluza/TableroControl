@@ -85,7 +85,7 @@ public partial class frmAnalisisCategoria : System.Web.UI.Page
             this.rpvData.ProcessingMode = Microsoft.Reporting.WebForms.ProcessingMode.Remote;
             this.rpvData.ShowParameterPrompts = false;
             this.rpvData.ServerReport.ReportServerUrl = new Uri(ConfigurationManager.AppSettings["ReportServerUrl"]);
-            this.rpvData.ServerReport.ReportPath = "/rptTablero/rptAnalisisCategoria";
+            this.rpvData.ServerReport.ReportPath = "/rptTableroBBVA/rptAnalisisCategoria";
             this.rpvData.ServerReport.SetParameters(_parameters);
             this.rpvData.ServerReport.Refresh();
             this.rpvData.Visible = true;

@@ -88,7 +88,7 @@ public partial class frmAnalisisSLA : System.Web.UI.Page
             this.rpvData.ProcessingMode = Microsoft.Reporting.WebForms.ProcessingMode.Remote;
             this.rpvData.ShowParameterPrompts = false;
             this.rpvData.ServerReport.ReportServerUrl = new Uri(ConfigurationManager.AppSettings["ReportServerUrl"]);
-            this.rpvData.ServerReport.ReportPath = "/rptTablero/rptAnalisisSLA";
+            this.rpvData.ServerReport.ReportPath = "/rptTableroBBVA/rptAnalisisSLA";
             this.rpvData.ServerReport.SetParameters(_parameters);
             this.rpvData.ServerReport.Refresh();
             this.rpvData.Visible = true;
