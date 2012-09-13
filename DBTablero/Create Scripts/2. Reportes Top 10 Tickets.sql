@@ -26,7 +26,7 @@ BEGIN
 	
 	SET NOCOUNT OFF
 END
-
+GO
 
 IF OBJECT_ID (N'[S_View_TicketsConSLA_Top10UsuarioDetalle]', N'P') IS NOT NULL
 	DROP PROCEDURE [S_View_TicketsConSLA_Top10UsuarioDetalle]
@@ -67,6 +67,7 @@ BEGIN
 	
 	SET NOCOUNT OFF
 END
+GO
 
 IF OBJECT_ID (N'[S_View_TicketsConSLA_Top10Area]', N'P') IS NOT NULL
 	DROP PROCEDURE [S_View_TicketsConSLA_Top10Area]
@@ -97,6 +98,7 @@ BEGIN
 	
 	SET NOCOUNT OFF
 END
+GO
 
 IF OBJECT_ID (N'[S_View_TicketsConSLA_Top10AreaDetalle]', N'P') IS NOT NULL
 	DROP PROCEDURE [S_View_TicketsConSLA_Top10AreaDetalle]
@@ -137,7 +139,7 @@ BEGIN
 	
 	SET NOCOUNT OFF
 END
-
+GO
 
 IF OBJECT_ID (N'[S_View_TicketsConSLA_Top10Categoria]', N'P') IS NOT NULL
 	DROP PROCEDURE [S_View_TicketsConSLA_Top10Categoria]
