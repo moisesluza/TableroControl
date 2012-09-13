@@ -1,5 +1,3 @@
-USE tablero
-GO
 
 if exists(select * from sys.objects where type_desc='USER_TABLE' and name='Categoria_Equilavencia')
 	drop table Categoria_Equilavencia
@@ -28,10 +26,10 @@ CREATE UNIQUE CLUSTERED INDEX [IX_Categoria_Equivalencai] ON [dbo].[Categoria_Eq
 (	[Categoria] ASC) WITH (STATISTICS_NORECOMPUTE  = OFF, SORT_IN_TEMPDB = OFF, DROP_EXISTING = OFF, IGNORE_DUP_KEY = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = OFF) ON [PRIMARY]
 
 GO
-
+/*
 insert into Categoria_Equilavencia 
 select distinct categoría, desccat from view_ticketsporestados where charindex('.',categoría)=0
-/*
+
 INSERT INTO Categoria_Equilavencia VALUES ('A/X Financiero','A/X Financiero')
 INSERT INTO Categoria_Equilavencia VALUES ('A/X Tecnico','A/X Tecnico')
 INSERT INTO Categoria_Equilavencia VALUES ('ACLXA','A/X Financiero')
