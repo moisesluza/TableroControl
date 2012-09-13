@@ -16,5 +16,7 @@ TestResults
 *.rptproj
 *.rptproj.user
 *.dbp
+*.csproj
+*.sln
 
 PrecompiledWeb/
