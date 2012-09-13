@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
   <DataSources>
-    <DataSource Name="dsTablero">
-      <rd:DataSourceID>b56704f7-d87d-4ce1-a9ab-83ab89de4677</rd:DataSourceID>
-      <DataSourceReference>dsTablero</DataSourceReference>
+    <DataSource Name="dsTablero_bbva">
+      <rd:DataSourceID>74216e75-9625-41e5-a499-75510db78a26</rd:DataSourceID>
+      <DataSourceReference>dsTablero_bbva</DataSourceReference>
     </DataSource>
   </DataSources>
   <InteractiveHeight>29.7cm</InteractiveHeight>
@@ -62,7 +62,7 @@
         </Field>
       </Fields>
       <Query>
-        <DataSourceName>dsTablero</DataSourceName>
+        <DataSourceName>dsTablero_bbva</DataSourceName>
         <CommandText>exec [S_View_SatisfaccionEncuestas_AnaSatisEnc] @Tipo, @Grupo, @Area, @FechaIni, @FechaFin</CommandText>
         <QueryParameters>
           <QueryParameter Name="@Tipo">

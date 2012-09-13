@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
   <DataSources>
-    <DataSource Name="dsTablero">
-      <rd:DataSourceID>80f41987-96bc-4165-a142-5bb4a2610e79</rd:DataSourceID>
-      <DataSourceReference>dsTablero</DataSourceReference>
+    <DataSource Name="dsTablero_bbva">
+      <rd:DataSourceID>94783670-8b12-490b-aa3c-83d502a90368</rd:DataSourceID>
+      <DataSourceReference>dsTablero_bbva</DataSourceReference>
     </DataSource>
   </DataSources>
   <InteractiveHeight>29.7cm</InteractiveHeight>
@@ -65,7 +65,7 @@
         </Field>
       </Fields>
       <Query>
-        <DataSourceName>dsTablero</DataSourceName>
+        <DataSourceName>dsTablero_bbva</DataSourceName>
         <CommandText>EXECUTE dbo.[S_View_TicketsEstadosAñosMesAgrupado_HistAten]  @Tipo, @Area, @anioMes_ini, @anioMes_fin</CommandText>
         <QueryParameters>
           <QueryParameter Name="@Tipo">

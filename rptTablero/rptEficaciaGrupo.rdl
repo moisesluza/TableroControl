@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
   <DataSources>
-    <DataSource Name="dsTablero">
-      <rd:DataSourceID>1ec27771-4abf-4cee-8893-8de2e0f22643</rd:DataSourceID>
-      <DataSourceReference>dsTablero</DataSourceReference>
+    <DataSource Name="dsTablero_bbva">
+      <rd:DataSourceID>6c0d3ecf-28b1-44d1-ab31-dc8f2927360f</rd:DataSourceID>
+      <DataSourceReference>dsTablero_bbva</DataSourceReference>
     </DataSource>
   </DataSources>
   <InteractiveHeight>29.7cm</InteractiveHeight>
@@ -59,7 +59,7 @@
         </Field>
       </Fields>
       <Query>
-        <DataSourceName>dsTablero</DataSourceName>
+        <DataSourceName>dsTablero_bbva</DataSourceName>
         <CommandText>EXECUTE [S_View_TicketsPorEstados_Eficacia] @TIPO, @GRUPO, @AREA, @Anio, @Mes</CommandText>
         <QueryParameters>
           <QueryParameter Name="@TIPO">
