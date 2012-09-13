@@ -16,10 +16,10 @@
             </div>
             <div id="tabs">
               <ul>
-                <li><a href="frmAnalisisSLA.aspx"><span>Análisis<br/>de SLA</span></a></li>
+                <%--<li><a href="frmAnalisisSLA.aspx"><span>Análisis<br/>de SLA</span></a></li>--%>
                 <li><a href="frmHistorial.aspx"><span>Histórico de<br/>Atenciones</span></a></li>
                 <li><a href="frmPendientesPorMes.aspx"><span>Tickets Pendientes<br/>por mes</span></a></li>
-                <li><a href="frmNivelSatisfaccion.aspx"><span>Análisis de<br/>satisfacción</span></a></li>
+                <%--<li><a href="frmNivelSatisfaccion.aspx"><span>Análisis de<br/>satisfacción</span></a></li>--%>
                 <li><a href="frmAnalisisCategoria.aspx"><span>Análisis de<br/>categorías</span></a></li>
                 <li><a href="frmEficaciaGrupo.aspx"><span>Eficacia por<br/>grupo</span></a></li>
                 <li><a href="frmTop10.aspx?intTipo=0"><span>Top 10 Tickets<br/>por Usuario</span></a></li>

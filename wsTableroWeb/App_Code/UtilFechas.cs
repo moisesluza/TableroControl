@@ -26,8 +26,9 @@ public class UtilFechas
         DateTime dtFecFin;
 
         dtFecFin = getFechaFin(intAnio, intMes);
-        dtFecIni = new DateTime(dtFecFin.Year-1, dtFecFin.Month, 1);
-
+        dtFecIni = dtFecFin.AddMonths(-6);
+        //dtFecIni = new DateTime(dtFecFin.Year-1, dtFecFin.Month, 1);
+        
         return dtFecIni;
     }
 
